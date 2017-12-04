@@ -184,3 +184,10 @@ VALUES ('Guardians of the Galaxy 2', 2017, '00:00');
 UPDATE movies SET show_time = '21:30'
 WHERE title = 'Guardians of the Galaxy';
 SELECT * FROM movies;
+
+-- ## Extension
+--
+-- 1. Research how to delete multiple entries from your table in a single command.
+
+DELETE title FROM movies
+WHERE id IN (1, 2);
