@@ -154,13 +154,14 @@ INSERT INTO "shows_users" (show_id, user_id) VALUES (11, 21);
 -- 10. Select the average price of all shows.
 SELECT AVG("price") FROM shows;
 -- 11. Select the price of the least expensive show.
---
+SELECT MIN("price") FROM shows;
 -- 12. Select the sum of the price of all shows.
---
+SELECT SUM("price") FROM shows;
 -- 13. Select the sum of the price of all shows whose prices is less than £20.
---
+SELECT SUM("price") FROM shows
+WHERE "price" < 20.00;
 -- 14. Select the name and price of the most expensive show.
---
+
 -- 15. Select the name and price of the second from cheapest show.
 --
 -- 16. Select the names of all users whose names start with the letter "M".

@@ -189,5 +189,6 @@ SELECT * FROM movies;
 --
 -- 1. Research how to delete multiple entries from your table in a single command.
 
-DELETE title FROM movies
-WHERE id IN (1, 2);
+DELETE FROM movies
+WHERE id IN (1, 4);
+SELECT * FROM movies;
